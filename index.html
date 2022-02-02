@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+
+  <i class="fas fa-bars"></i>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,14 +19,18 @@
 <body>
   <header> <!-- note-->
     <div class="container">
-      <a href="index.HTML" alt="Marija Jukneviciute">
-      <img class=logo src="https://via.placeholder.com/150x50?text=Logo" alt="Marija">
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logolink"  href="index.HTML" alt="Marija Jukneviciute">
+        <img class="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="Marija">
     </a>
+  </div>
       <nav>
+      </div>
         <ul>
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
       </ul>
       </nav>
     </div>
@@ -41,13 +47,15 @@
       </span>
     </div>
   </div>
+</div>
 
   <div class="container">
-    <div>
-      <h2>My Work</h2>
-      <div class="row">
-    </div>
+
     <div class="row">
+      <h2>My Work</h2>
+    </div>
+
+      <div class="row">
       <div class="col-md-6">
         <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
@@ -669,7 +677,7 @@
 </picture>
 </div>
 
-<div>
+<div class="col-md-6">
 <h3>D'Empire</h3>
 <div class="row">
 <p>A responsive online shop, that sells contemporary designer’s clothes.</p>
@@ -722,6 +730,7 @@
 
   <footer id="contact">
   <div class="container">
+
     <h2>Get in touch</h2>
     <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+4917630791496">+49 176 30791496</a> or Skype me at
 <a href="skype:drew8877">drew8877</a>. Prefer sending an email?
@@ -736,7 +745,7 @@
     </a>
   </li>
     <li><a href="https://dribbble.com/Mariukas" class="icons" target="_blank">
-      <svg height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" viewBox="0 0 2048 2048" width="2048px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">
+      <svg height="100%" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" viewBox="0 0 2048 2048" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">
          <![CDATA[
           .fil2 {fill:none}
           .fil1 {fill:#B2215A}
@@ -746,7 +755,7 @@
     </a>
     </li>
     <li><a href="https://www.behance.net/marijajuknevi" class="icons" target="_blank">
-      <svg height="6.82666in" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">
+      <svg height="100%" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">
          <![CDATA[
           .fil0 {fill:#039BE5}
           .fil1 {fill:#F1F2F2}
@@ -759,6 +768,8 @@
 <p>Copyright MARIJA JUKNEVICIUTE 2022</p>
 </div>
 </footer>
+
+<script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
 
 <script src="js/scripts.js"></script>
 
