@@ -8,9 +8,8 @@ Typography (Black): #191919;
 * {
   box-sizing: border-box;
 }
-.container {
-  padding: 0 15px;
-}
+
+
 html {scroll-behavior: smooth;}
 
 body {background-color: #F2F3F5;
@@ -33,6 +32,35 @@ position: fixed;
 width: 100%
 }
 
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.logolink {
+display:block;
+    position: absolute;
+}
+
+.logo {
+  max-width: 150px;
+
+}
+
+
+.container {
+  padding: 0 15px;
+}
+
 #hero h1 {
   text-align: center;
 }
@@ -48,21 +76,6 @@ width: 100%
   display: block;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.icons svg { width: 48px}
 
 main {
   padding-top: 133px;
@@ -74,9 +87,14 @@ h1 {font-size: 2.75em; font-weight: 700;}
 h2 {font-size: 2.25em; font-weight: 700;}
 h3 {font-size: 1.75em; font-weight: 400;}
 h4 {font-size: 1.35em; font-weight: 400;}
+
 img {
   width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
+
 a {
   color: #4D7D88;
   text-decoration: none; /* No underlining */
@@ -91,6 +109,7 @@ a:visited { /* visited link */
 a:active { /* selected link */
   color: #0B0B0B;
 }
+
 a:hover,
 a:focus {
   color: #191919;
@@ -108,6 +127,7 @@ a:focus {
 }
 .button:hover {
   opacity: 0.8;
+  color: #d8e6e9;
   text-decoration: none;
 
 }
@@ -125,9 +145,6 @@ a:focus {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-.logo {
-  max-width: 250px;
-}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -135,8 +152,9 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px){
 header {
     text-align: unset;
-    padding: 10px 0 13px;
-  }
+    /* padding: 10px 0 13px; */
+    margin: 0px;
+    }
 
   nav {
     width: auto;
@@ -144,13 +162,42 @@ header {
     margin-top: 4px;
   }
 
+.container {
+  padding: 0 0px;
+  max-width: 1200px
+  margin: 0 auto;
+}
+
 body {
   font-size: 18px;
 }
 
-.col-md-6 {
-  width: 50%;
+.container {
+padding: 0 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+    .row {
+  margin: 80px 0; /* 25px top and bottom, 0 left and right */
 }
+
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+
+      .col-md-7 {
+      width: 60%;
+    }
+
+
+
+        .col-md-5 {
+      width: 40%;
+    }
+
 [class*="col-"] {
   padding-left: 10px;
   padding-right: 10px;
@@ -162,27 +209,60 @@ body {
   display: table;
 }
 
+.logo {
+  max-width: 250px;
+}
+
 #about-page h3 { margin-top: 0;}
 }
+
+footer ul{
+    margin-top: 80px;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline;
+}
+
+.icons {
+    margin-right 15px;
+}
+.icons svg { width: 48px}
+
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+
+      .col-lg-7 {
+  width: 60%;
+}
+
+
+
+    .col-lg-5 {
+  width: 40%;
+}
+
+
+
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px){
+
 }
 
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
-}
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
