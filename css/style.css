@@ -22,14 +22,14 @@ body {background-color: #F2F3F5;
 header {
   z-index: 4;
   background-color: #FFFFFF;
-  padding: 10px 0 4px;
-  margin: 10px;
+
 
   -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 position: fixed;
-width: 100%
+width: 100%;
+height: 90px;
 }
 
 nav > ul > li > a {
@@ -41,7 +41,11 @@ nav > ul > li > a {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  background-color: #FFFFFF;
+}
+
+nav > ul > li {
+display: inline-block;
 }
 
 .navtoggle.responsive nav {
@@ -50,12 +54,11 @@ nav > ul {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
-  padding: 0 0 10px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -63,16 +66,20 @@ nav > ul {
 }
 
 .navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
+position: absolute;
+right: 0;
+top: 10px;
+font-size: 20px;
+}
+
+.navtoggle.responsive li:last-child {
+padding: 0 0 10px;
 }
 
 .logolink {
 display:block;
     position: absolute;
+    top: 10px;
 }
 
 .logo {
